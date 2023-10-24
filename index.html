@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="bg-white dark:bg-dim-900 selection:bg-blue-400 selection:text-white">
+
+    <div class="container h-screen flex  mx-auto xl:max-w-[1200px] ">
+        
+        <!-- left-->
+        <div class="w-20 xl:w-1/5  h-full flex flex-col xl:pr-4">
+
+            <a href="#" class="link-active my-4">
+                <i class="fa-brands fa-twitter text-4xl"></i>
+            </a>
+            <nav class="mt-5">
+                <a href="#" class="link-active mb-8">
+                    <i class="fa-solid fa-house text-xl"></i>
+                    <span class="icon">Home</span>
+                </a>
+                <a href="#" class="link mb-8">
+                    <i class="fa-solid fa-hashtag text-xl "></i>
+                        <span class="icon">Explore</span>
+                </a>
+                <a href="#" class="link mb-8">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="icon">Notifications</span>
+                </a>
+                <a href="#" class="link mb-8">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="icon">Messages</span>
+                </a>
+                <a href="#" class="link mb-8">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span class="icon">Bookmarks</span>
+                </a>
+                <a href="#" class="link mb-8">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <span class="icon">Lists</span>
+                </a>
+                <a href="#" class="link mb-8">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="icon">Profile</span>
+                </a>
+                <a href="#" class="link mb-8">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <span class="icon">More</span>
+                </a>
+            </nav>
+            <!-- Button -->
+            <a href="#" class="btn-tweet">
+                <i class="fa-solid fa-feather xl:hidden "></i>
+                <span class="icon xl:ml-0">Tweet</span>
+            </a>
+            <!-- User -->
+            <div class="mx-auto mt-auto w-14 xl:w-full flex justify-between rounded-full cursor-pointer mb-2 p-2" >
+                <img class="w-10 h-10 rounded-full" src="./images/Ibrahim Saleem.png" alt="">
+                <div class="hidden xl:flex flex-col">
+                    <h4 class=" text-gray-800 dark:text-white font-bold text-sm">Ibrahim Saleem</h4>
+                    <p class="text-gray-400 text-sm">@ibrahimsaleem</p>
+                </div>
+                <i class="hidden xl:flex items-center text-sm xl:ml-2 text-gray-800 dark:text-white fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <!-- center-->
+        <div class="w-full xl:w-1/2 h-screen overflow-y-auto  ">
+            <div class="flex justify-between items-center px-3 py-2 sticky top-0 bg-white dark:bg-dim-900  border  border-gray-200 dark:border-gray-700">
+                <h4 class="text-gray-800 dark:text-gray-100 font-bold cursor-pointer" >
+                    Home
+                </h4>
+                <i class="fa-brands fa-twitter text-blue-500"></i>
+            </div>
+
+            <!--Tweet Box-->
+            <div class="border pb-3 border-gray-200 dark:border-dim-200 " >
+                <div class="flex p-4">
+                    <img class="w-10 h-10 rounded-full" src="./images/Ibrahim Saleem.png" alt="">
+                    <textarea class="p-2 dark:text-white text-gray-900 w-full resize-none bg-transparent h-16 focus:outline-none"  placeholder="What's happening"></textarea>
+                </div>
+                <div class="flex w-full p-4">
+                    <a class=" text-blue-400 p-2 rounded-full" href="">
+                        <i class="fa-solid fa-image text-lg"></i>
+                    </a>
+                    <a class=" text-blue-400 p-2 rounded-full" href="">
+                        <i class="fa-brands fa-git text-lg"></i>
+                    </a>
+                    <a class=" text-blue-400 p-2 rounded-full" href="">
+                        <i class="fa-solid fa-square-poll-horizontal text-lg"></i>
+                    </a>
+                    <a class=" text-blue-400 p-2 rounded-full" href="">
+                        <i class="fa-solid fa-face-smile text-lg"></i>
+                    </a>
+                    <a class=" text-blue-400 p-2 rounded-full" href="">
+                        <i class="fa-solid fa-business-time  text-lg"></i>
+                    </a>
+                    <a class=" bg-blue-400 text-white px-6 rounded-full ml-auto mr-1 flex items-center font-bold blue-hover" href="">
+                        Tweet
+                    </a>
+                </div>
+            </div>
+            <!--Show tweets-->
+            <div class="text-center text-blue-400 text-sm cursor-pointer p-4 bg-white dark:bg-transparent border border-gray-200 dark:border-dim-200">
+                Show 9 Tweets
+            </div>
+            <!--Tweet-->
+            <div class="border border-gray-200 dark:border-dim-200 pt-2">
+                <div class="flex p-4 pb-0 ">
+                    <img class="w-9 h-9 rounded-full cursor-pointer" src="./images/Ibrahim Saleem.png" alt="">
+                    <p class="font-medium text-gray-800 dark:text-white flex flex-shrink-0 items-center ml-2 cursor-pointer">
+                        Ibrahim Saleem
+                        <span class="text-gray-400 text-sm leading-5  ml-1">
+                            ibrahimsaleem .Nov 2
+                        </span>
+                    </p>
+                </div>
+                <div class="pl-8 xl:pl-16 pr-4">
+                    <p class="text-gray-800 mt-3  dark:text-white w-auto font-medium "> 
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+                        Provident libero voluptates nostrum,<br>
+                        cumque aspernatur repellendus maiores quas id quasi neque quaerat dolore,<br>
+                        fugiat ipsam sed laboriosam totam unde vitae dolor.
+                        <a class="text-blue-400" href="#">#mistakes</a>
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, error?
+                    </p>
+                    <img class="border border-gray-600 rounded-2xl my-3 mr-2 w-full" src="./images/10-10-6k.jpg" alt="">
+                    <div class="flex items-center justify-between mb-3 w-full">
+                        <div class="action-tweet hover:text-blue-400 transition duration-300">
+                            <i class="fa-solid fa-comment mr-2 text-lg"></i>
+                            5.3K
+                        </div>
+                        <div class="action-tweet hover:text-green-400 ">
+                            <i class="fa-solid fa-retweet mr-2 text-lg"></i>
+                            8.2K
+                        </div>
+                        <div class="action-tweet hover:text-red-600 transition duration-300">
+                            <i class="fa-solid fa-heart mr-2 text-lg"></i>
+                            6.1K
+                        </div>
+                        <div class="action-tweet hover:text-blue-400 transition duration-300" >
+                            <i class="fa-solid fa-share mr-2 text-lg"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--Toggler-->
+            <div class="border border-gray-200 dark:border-dim-200 py-3 bg-gray-50 dark:bg-dim-300">
+                <div class=" p-6 text-center border-t border-b border-gray-200 dark:border-dim-200 bg-white dark:bg-dim-900">
+                    <h3 class=" dark:text-white text-gray-900 text-2xl font-bold mb-2">
+                        customize your view
+                    </h3>
+                    <p class="text-gray-500 text-sm mb-5 ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Possimus quibusdam eligendi illum aliquam suscipit minus.
+                    </p>
+                    <a class="blue-hover w-11 h-11 xl:w-48 mx-auto flex items-center justify-center bg-blue-400 py-4 rounded-full text-white font-bold"
+                    href="javascript:void(0)" onclick="document.querySelector('html').classList.toggle('dark')">
+                        <i class="fa-solid fa-cloud-moon xl:hidden text-xl"></i>
+                        <span class="hidden xl:block font-bold ">Toggle Dark Mode</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!--Spinner-->
+            <div class="p-4 border border-gray-200 dark:border-gray-700">
+
+                <svg class="w-8 h-8 mx-auto animate-spin-fast">
+                <circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="stroke: rgb(29, 161, 242); opacity: 0.2">
+                </circle>
+                <circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="
+                        stroke: rgb(29, 161, 242);
+                        stroke-dasharray: 80;
+                        stroke-dashoffset: 60;">
+                </circle>
+                </svg>
+            </div>
+        </div>
+
+        <!-- right-->
+        <div class=" hidden xl:block w-[30%] h-full ">
+            <!--Search-->
+            <div class="m-2 relative">
+                <i class="fa-solid fa-magnifying-glass  text-gray-600 absolute left-4 top-1/2 -translate-y-1/2	"></i>
+                <input type="text"
+                placeholder="Search Twitter"
+                class="w-full bg-gray-200 dark:bg-dim-400 border-gray-200 dark:bg-dim-400 text-gray-100 focus:outline-none font-normal h-9 pl-12 text-sm rounded-full">
+            </div>
+            <!--What's happening-->
+            <div class="bg-gray-50 dark:bg-dim-700 rounded-2xl m-2">
+                <h3 class="text-gray-900 dark:text-white font-bold p-3 border-b border-gray-200 dark:border-dim-200">
+                    What's happening
+                </h3>
+                <!--Hashtag-->
+                <div class="p-3 border-b border-gray-200 dark:border-dim-200 ">
+                    <h4 class="font-bold text-gray-800 dark:text-white cursor-pointer">
+                        #Palestine
+                    </h4>
+                    <p class="text-xs text-gray-400">76.8K Tweets</p>
+                </div>
+                <div class="p-3 border-b border-gray-200 dark:border-dim-200 ">
+                    <h4 class="font-bold text-gray-800 dark:text-white cursor-pointer">
+                        #Palestine
+                    </h4>
+                    <p class="text-xs text-gray-400">76.8K Tweets</p>
+                </div>
+                <div class="p-3 border-b border-gray-200 dark:border-dim-200 ">
+                    <h4 class="font-bold text-gray-800 dark:text-white cursor-pointer">
+                        #Palestine
+                    </h4>
+                    <p class="text-xs text-gray-400">76.8K Tweets</p>
+                </div>
+                <div class="text-blue-400 p-3 cursor-pointer">
+                    Show more
+                </div>
+            </div>
+
+            <!--Who to follow-->
+            <div class="bg-gray-50 dark:bg-dim-700 rounded-2xl m-2">
+                <h3 class="text-gray-900 dark:text-white font-bold p-3 border-b border-gray-200 dark:border-dim-200">
+                    Who to follow 
+                </h3>
+                <!--users-->
+                <div class="p-5 border-b border-gray-200 dark:border-dim-200 flex justify-between items-center ">
+                   <div class="flex">
+                        <img class="w-10 h-10 rounded-full cursor-pointer" src="./images/WhatsApp Image 2023-10-24 at 3.21.43 PM.png" alt="">
+                        <div class="ml-2 text-sm cursor-pointer">
+                            <h5 class="text-gray-900 dark:text-white font-bold">
+                                Khaled Saleem
+                            </h5>
+                            <p class="text-gray-400">@khaledsaleem</p>
+                        </div>
+                
+                    </div>
+                   <button class="text-sm font-bold text-blue-400 px-4 p-1 rounded-full border-2 border-blue-400">Follow</button>
+                </div>
+                <div class="p-5 border-b border-gray-200 dark:border-dim-200 flex justify-between items-center ">
+                   <div class="flex">
+                        <img class="w-10 h-10 rounded-full cursor-pointer" src="./images/mo.jpeg" alt="">
+                        <div class="ml-2 text-sm cursor-pointer">
+                            <h5 class="text-gray-900 dark:text-white font-bold">
+                                Mohamed Saleem
+                            </h5>
+                            <p class="text-gray-400">@mohamedsaleem</p>
+                        </div>
+                
+                    </div>
+                   <button class="text-sm font-bold text-blue-400 px-4 p-1 rounded-full border-2 border-blue-400">Follow</button>
+                </div>
+                <div class="p-5 border-b border-gray-200 dark:border-dim-200 ">
+                   <div class="flex gap-x-4 animate-pulse">
+                    <div class="bg-gray-400 rounded-full w-11 h-11"></div>
+                    <div class="flex-1 space-y-2 py-1">
+                        <div class="h-4 bg-gray-400 rounded w-5/6"></div>
+                        <div class="h-4 bg-gray-400 rounded w-3/4"></div>
+                        <div class="h-4 bg-gray-400 rounded w-4/6"></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="text-blue-400 p-3 cursor-pointer">
+                    Show more
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
